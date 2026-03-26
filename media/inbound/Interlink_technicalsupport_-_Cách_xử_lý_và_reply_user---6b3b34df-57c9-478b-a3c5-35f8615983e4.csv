@@ -1,0 +1,42 @@
+CÁC LỖI THƯỜNG GẶP,,,,,
+Type,Code,Description,Các thông tin cần User cung cấp,PIC,Cách reply user
+Mining,M01,HHP của user bị reset về 1.0,"- Interlink ID
+
+- Ảnh chụp màn hình HHP hiện tại
+
+- Bảo user thoát app ra vào lại hoặc xóa app tải lại xem có bình thường lại chưa. Nếu vẫn chưa được thì push sang Dev check.",Quang,"Giải thích user đây là khi có quá nhiều người claim cùng lúc hoặc sử dụng cùng lúc, thời điểm cao điểm sẽ bị tình trạng này -> Out ra app, đợi 10-15 phút vào lại
+=> Nếu sau 1 ngày vẫn k được cộng hay reset về số cũ thì báo Dev"
+,M02,"ITLG bị giảm, không nhận được ITLG sau khi mining","- Interlink ID
+
+- Ảnh chụp màn hình ITLG hiện tại
+
+- ITLG bị giảm từ bao nhiêu xuống bao nhiêu, vào khoảng thời gian nào, bị bao nhiêu lần, càng detail càng tốt.
+
+- Bảo user thoát app ra vào lại đợi 10p là ok. Nếu vẫn chưa được thì push sang Dev check",Quang,
+,M03,Chưa được trả thưởng Weekly Reward,"- Thời gian user check reward, bây giờ đã được trả thưởng chưa
+
+- Interlink ID",Minh,"Notify user về thời gian mình trả thưởng hằng tuần + điểm của user được tính từ ngày bao nhiêu
+
+Weekly reward của game là 3AM UTC+0  chủ nhật 
+Monthly reward là trả vào ngày đầu tháng 3AM UTC+0  "
+Signup & Login,S01,"Quên passcode, chưa liên kết mail","- Interlink ID
+
+- Ảnh chân dung khuôn mặt user",Quang,"Gửi mặt + ID để chị Thuỷ test -> nếu khớp thì Mod hỏi user là mình reset mật khẩu để họ vào dc k -> họ ok thì Quang sẽ reset pass và gửi lại 
+-> Mod Gửi user mật khẩu mà dev đã reset, nhắc user vào app liên kết email và đổi mật khẩu mới."
+,S02,"Không verify được khuôn mặt (trùng mặt, scan face không thành công, etc.)","- Interlink ID (Nếu đang ở bước đăng ký thì xin ID user nhập lúc đăng ký)
+
+- Video quay màn hình user scan face và app báo lỗi (phải thấy được rõ lỗi hiện lên là lỗi gì). Nếu hiển thị  không phải tiếng Việt/tiếng Anh thì dịch ra cho Dev dễ check
+
+- Đối với các case trùng mặt: hỏi user đã có account nào trước đây chưa",Quang,"CHECK CASE BY CASE, NOTE ĐỂ DEV CHECK"
+,S03,Scan face đen thui,- Bảo user vào Cài đặt check xem đã cấp quyền camera cho app Interlink Network chưa,,
+,S04,Quên Login ID,"- Bảo user chọn ""Forgot Login ID"" và thực hiện scan face sẽ lấy lại được login ID
+- Nếu vẫn không được, nhờ user quay màn hình scan face + gửi ảnh chân dung để dev check",Anh Đạt,  
+Game,G01,Game Slime lỗi đám mây đen,Đây không phải lỗi mà là tính năng của game để tăng độ khó,,
+,G02,"Chơi game xong không được cộng điểm, không ấn submit được","- Ảnh/video lúc chơi game xong hiện điểm và số ITLG hiện tại
+
+- Thời gian họ chơi",Minh,Trả lời dựa trên phản hồi của Dev
+,G03,Không ấn nâng cấp được ,"Với những vật phẩm có chữ MAX thì ko nâng cấp được 
+User ấn 1 lần r đợi xíu, đừng ấn liên tục, nó lag là khỏi chơi",Minh,
+,G04,Tool Cheat/Hack game,- Video xem họ chơi game và tool/cheat như thế nào,Minh,
+Other,O01,Muốn Deactivate/Xóa account,Không hỗ trợ xóa,,
+,O03,Sinh đôi,"Báo user là mình đang update feature, họ thông cảm chờ chút",,

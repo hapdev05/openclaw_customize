@@ -1,0 +1,35 @@
+Cách xử lý và reply user,,,,
+Type,Description,Các thông tin cần User cung cấp,PIC,Cách reply user
+Burn ITLG,Mine đều nhưng vẫn bị burn,"- Interlink ID 
+- Ảnh chụp màn hình lịch sử Burn: Burn by Ref, Burn by inactivity",Quang,"- Nếu mine hàng ngày mà bị burn thì có thể là do ref bị burn về 0 nên sẽ bị trừ:
++ 1000 ITLG cho F1 
++ 500 ITLG cho F2 
+Nếu bị trừ rồi lần sau ref đó bị burn tiếp về 0 sẽ ko bị trừ lần nữa. "
+Email,Đổi email đã connect có được không?,,,"Chưa hỗ trợ tính năng này. 
+Nếu đã liên kết bằng các phương thức thì tạm đăng nhập bằng các phương thức đó: Quét mặt, tele, facebook, apple"
+HCS,HCS không cộng ở App,"- Interlink ID
+- Ảnh chụp màn hình HCS trước đó, hiện tại",Quang,
+,HCS không cộng ở Ví,,,"- Hỏi user đã liên kết ví đó với Interlink ID chưa. 
+- Nếu rồi, trả lời user sẽ cần thời gian để AI tính toán điểm HCS"
+,Hỏi về công thức HCS ,,,"- Không được public công thức HCS
+- Cứ trả lời chung chung là tích cực hoạt động trong app: Mining, Group Mining, chơi Game và trong ví: Trade, Swap sẽ được AI tính điểm dựa trên mức độ active của mỗi cá nhân, tạo tính công bằng cho tất cả user mới vầ cũ."
+,HCS thấp dù ITLG nhiều,,,"- HCS là tính năng mới ra gần đây nên công bằng cho cả user mới và cũ 
+- User active cũ vẫn được ưu tiên sau này nếu duy trì active
+Interlink sẽ đảm bảo công bằng nhất cho tất cả user"
+,Liên kết nhiều ví với ID được cộng HCS ko,,,"Có, liên kết nhiều ví với cùng 1 Interlink ID sẽ được tính điểm HCS cho ID đó
+Liên kết ví với ID nào sẽ được cộng cho ID đó
+Điều kiện: Có active ví: Trade, Swap"
+Wallet,Gửi token xong không load balance,"- Ảnh chụp màn hình lỗi 
+- Địa chỉ ví 
+- Transaction hash của giao dịch Gửi
+- Chain thực hiện",Quang,"Tuỳ điện thoại và cấu hình sẽ có tốc độ load khác nhau, thông thường sẽ rơi vào 2p - 5p để load lại balance
+
+Nếu chờ ~2p chưa thấy load balance thì refresh lại màn hình"
+,Swap không thực hiện được,"- Ảnh chụp màn hình mô tả rõ lỗi ở bước nào
+- Địa chỉ ví ",Quang,
+,Swap token A -> B mà ko thấy B sau khi swap,,,"Check lại không thấy token đích nằm trong token mặc định: 
+- Hỏi lại user là đã bật token đích lên chưa, xin ảnh 
+- Nếu không biết bật ở đâu -> hướng dẫn user bật lên "
+,Reset ví hoặc bị out khỏi ví sau xoá app có lấy lại được không?,,,"- KHÔNG nếu không sao lưu seedphrase hoặc private key trước đó. 
+- CÓ nếu đã lưu lại eedphrase hoặc private key trước đó. 
+Cần nhấn mạnh user bắt buộc lưu lại seedphrase/private key/icloud để có thể import lại ví nếu lỡ bị log-out"
