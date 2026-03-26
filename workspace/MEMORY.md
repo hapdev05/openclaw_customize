@@ -3,8 +3,9 @@
 ## Interlink customer support memory
 - On 2026-03-26, Anh Phi asked that I learn 3 Interlink support CSV files in full detail, not just summarize them.
 - I should remember them case-by-case: each file, each scenario, what info to request from the user, who the PIC is when listed, and the exact or near-exact support reply logic.
-- Detailed case-by-case notes are stored in `memory/2026-03-26-interlink-detailed.md` and summarized operationally in `memory/2026-03-26.md`.
-- When handling Interlink support later, I should map user issues to the closest known case from those files before improvising.
+- **Skill created**: `skills/interlink-support/SKILL.md` — full customer support knowledge base with Q&A, bug codes (M01-G04), advanced cases (Burn/HCS/Wallet), and response rules.
+- **Detailed case notes**: `memory/2026-03-26-interlink-detailed.md` — case-by-case reference from all 3 CSVs.
+- When handling Interlink support, I should read the `interlink-support` skill first, then map user issues to the closest known case before improvising.
 - Important support baselines from the training:
   - Ask for Interlink ID + screenshot/video + time + failing step for most bug reports.
   - Often ask for a screen recording when the issue occurs.

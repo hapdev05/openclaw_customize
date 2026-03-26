@@ -313,7 +313,7 @@
   },
   "agent:main:telegram:direct:7835139312": {
     "sessionId": "fa9597bd-f4b7-4092-b86c-10c868618b2e",
-    "updatedAt": 1774519267043,
+    "updatedAt": 1774521936920,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
@@ -406,7 +406,7 @@
     "contextTokens": 272000,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1774519152429,
+      "generatedAt": 1774521928031,
       "sessionId": "fa9597bd-f4b7-4092-b86c-10c868618b2e",
       "sessionKey": "agent:main:telegram:direct:7835139312",
       "provider": "openai-codex",
@@ -426,17 +426,17 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 28830,
-        "projectContextChars": 15777,
-        "nonProjectContextChars": 13053
+        "chars": 30456,
+        "projectContextChars": 17413,
+        "nonProjectContextChars": 13043
       },
       "injectedWorkspaceFiles": [
         {
           "name": "AGENTS.md",
           "path": "C:\\Users\\admin\\.openclaw\\workspace\\AGENTS.md",
           "missing": false,
-          "rawChars": 9640,
-          "injectedChars": 9640,
+          "rawChars": 9960,
+          "injectedChars": 9960,
           "truncated": false
         },
         {
@@ -485,6 +485,14 @@
           "missing": false,
           "rawChars": 1449,
           "injectedChars": 1449,
+          "truncated": false
+        },
+        {
+          "name": "MEMORY.md",
+          "path": "C:\\Users\\admin\\.openclaw\\workspace\\MEMORY.md",
+          "missing": false,
+          "rawChars": 1267,
+          "injectedChars": 1267,
           "truncated": false
         }
       ],
@@ -616,11 +624,11 @@
         ]
       }
     },
-    "inputTokens": 4252,
-    "outputTokens": 5714,
-    "cacheRead": 27392,
+    "inputTokens": 25885,
+    "outputTokens": 135,
+    "cacheRead": 28160,
     "cacheWrite": 0,
-    "totalTokens": 27627,
+    "totalTokens": 28368,
     "totalTokensFresh": true,
     "lastTo": "telegram:7835139312",
     "lastAccountId": "default"
@@ -1905,7 +1913,7 @@
       "accountId": "default"
     },
     "sessionId": "5d1d5888-6bc6-414b-a94b-176e41ecdc9d",
-    "updatedAt": 1774520969672,
+    "updatedAt": 1774530838459,
     "deliveryContext": {
       "channel": "telegram",
       "to": "telegram:7050187889",
@@ -1990,7 +1998,7 @@
     "contextTokens": 272000,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1774520966134,
+      "generatedAt": 1774530833676,
       "sessionId": "5d1d5888-6bc6-414b-a94b-176e41ecdc9d",
       "sessionKey": "agent:main:telegram:direct:7050187889",
       "provider": "openai-codex",
@@ -2010,9 +2018,9 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 30466,
-        "projectContextChars": 17413,
-        "nonProjectContextChars": 13053
+        "chars": 30630,
+        "projectContextChars": 17587,
+        "nonProjectContextChars": 13043
       },
       "injectedWorkspaceFiles": [
         {
@@ -2075,8 +2083,8 @@
           "name": "MEMORY.md",
           "path": "C:\\Users\\admin\\.openclaw\\workspace\\MEMORY.md",
           "missing": false,
-          "rawChars": 1267,
-          "injectedChars": 1267,
+          "rawChars": 1441,
+          "injectedChars": 1441,
           "truncated": false
         }
       ],
@@ -2208,11 +2216,11 @@
         ]
       }
     },
-    "inputTokens": 227,
-    "outputTokens": 85,
-    "cacheRead": 12800,
+    "inputTokens": 248,
+    "outputTokens": 36,
+    "cacheRead": 25600,
     "cacheWrite": 0,
-    "totalTokens": 13027,
+    "totalTokens": 25848,
     "totalTokensFresh": true
   },
   "agent:main:telegram:direct:7069524082": {
