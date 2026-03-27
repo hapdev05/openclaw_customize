@@ -14,3 +14,11 @@
   - Prefer the more cautious/newer answer if source replies conflict (example: changing email is currently not supported).
   - Product policy baseline: account deletion not supported; Interlink ID change not supported.
   - Reward schedule baseline: weekly game reward Sunday 3AM UTC+0; monthly reward first day of month 3AM UTC+0.
+
+## Conversation logging
+- **Skill created**: `skills/conversation-logger/SKILL.md` — tự động ghi log mỗi cuộc hội thoại hỗ trợ.
+- Log lưu tại `memory/conversations/YYYY-MM.md` (theo tháng).
+- Ghi: vấn đề, phân loại, mã lỗi, ngôn ngữ, trạng thái giải quyết, tóm tắt trao đổi.
+- Đánh dấu `⚠️ CÂU HỎI MỚI` khi user hỏi điều chưa có trong skill → admin review.
+- KHÔNG ghi thông tin nhạy cảm (ID, mật khẩu, seedphrase).
+- Tổng hợp thống kê hàng tuần qua heartbeat (thứ Hai).
