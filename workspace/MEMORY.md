@@ -22,3 +22,13 @@
 - Đánh dấu `⚠️ CÂU HỎI MỚI` khi user hỏi điều chưa có trong skill → admin review.
 - KHÔNG ghi thông tin nhạy cảm (ID, mật khẩu, seedphrase).
 - Tổng hợp thống kê hàng tuần qua heartbeat (thứ Hai).
+
+## Ambassador program update (2026-03-28)
+- Câu trả lời ambassador đã được cập nhật: có link onboarding, trainee process, và contact @ekwinbudi.
+- Không còn trả lời "chúng tôi không thuộc chương trình đại sứ" — thay bằng hướng dẫn chi tiết.
+
+## Whitepaper sync (2026-03-28)
+- **Skill created**: `skills/whitepaper-sync/SKILL.md` — hướng dẫn sync nội dung whitepaper hàng ngày.
+- **Data file**: `memory/whitepaper-data.md` — dữ liệu whitepaper đã tổng hợp (ITL, ITLG, tokenomics, FAQ...).
+- **Cron job**: `whitepaper-daily-sync` chạy lúc 3:00 AM UTC+7 (20:00 UTC) hàng ngày.
+- Khi user hỏi về token/tokenomics → đọc `memory/whitepaper-data.md` + dẫn link whitepaper.

@@ -84,6 +84,11 @@ Mỗi cuộc hội thoại ghi theo format sau:
    - Bot **không chắc chắn** với câu trả lời → ghi `⚠️ CẦN XÁC NHẬN`.
 4. **Phân loại chính xác** để dễ thống kê sau này.
 5. **Bảo mật**: KHÔNG ghi Interlink ID, mật khẩu, seedphrase, hoặc thông tin nhạy cảm của user. Chỉ ghi @username Telegram.
+6. **Ghi log sự kiện spam/chặn**: Khi user bị cảnh báo hoặc chặn do off-topic/spam, ghi log với:
+   - **Phân loại**: `Spam / Off-topic`
+   - **Ghi chú**: ghi rõ cấp cảnh báo (lần mấy), thời gian chặn, và nội dung off-topic (tóm tắt ngắn, KHÔNG copy nguyên văn nếu nội dung nhạy cảm)
+   - **Đã giải quyết**: `🚫 Chặn [X phút/giờ]` hoặc `⚠️ Cảnh cáo`
+7. **Ghi log mở chặn**: Khi user được tự động mở chặn, ghi ngắn: *"User @username — Tự động mở chặn sau [X phút/giờ]"*
 
 ## Tổng hợp hàng tuần (Heartbeat task)
 

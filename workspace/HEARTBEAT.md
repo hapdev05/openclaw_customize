@@ -10,3 +10,9 @@
   - Count of ⚠️ new questions not in skill
   - Count of ❌/⏳ unresolved cases
 - If there are many ⚠️ new questions → notify admin Anh Phi to update `interlink-support` skill
+
+### 📄 Whitepaper Sync Health Check (Daily)
+- Check `memory/whitepaper-data.md` → verify "Last synced" date is today or yesterday
+- If last sync is older than 2 days → cron job may have failed → log warning in daily memory
+- If whitepaper content has major changes → notify admin
+
