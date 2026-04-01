@@ -10,8 +10,7 @@
       "prompt": "Read the skill file `workspace/skills/whitepaper-sync/SKILL.md` and follow its sync process. Fetch all whitepaper pages listed in the skill, summarize their content, and update `workspace/memory/whitepaper-data.md` with any new or changed information. Log results in today's `workspace/memory/YYYY-MM-DD.md`.",
       "enabled": true,
       "state": {
-        "nextRunAtMs": 1774702800000,
-        "runningAtMs": 1774832452180
+        "nextRunAtMs": 1775048400000
       },
       "name": "Cron: 0 20 * * *",
       "wakeMode": "now",

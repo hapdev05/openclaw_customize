@@ -1,10 +1,10 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.3.13",
-    "lastTouchedAt": "2026-03-24T01:06:28.309Z"
+    "lastTouchedAt": "2026-03-31T02:44:09.261Z"
   },
   "wizard": {
-    "lastRunAt": "2026-03-24T01:06:28.142Z",
+    "lastRunAt": "2026-03-31T02:44:09.109Z",
     "lastRunVersion": "2026.3.13",
     "lastRunCommand": "onboard",
     "lastRunMode": "local"
@@ -20,7 +20,7 @@
   "agents": {
     "defaults": {
       "model": {
-        "primary": "openai-codex/gpt-5.4"
+        "primary": "9router/cx/gpt-5.2-codex"
       },
       "workspace": "C:\\Users\\admin\\.openclaw\\workspace"
     }
@@ -41,7 +41,7 @@
     "telegram": {
       "enabled": true,
       "dmPolicy": "open",
-      "botToken": "8195629281:AAG7BNlTQA9QAdjoM4qGog9e5VA39E4KTig",
+      "botToken": "8005023941:AAH0oV2NlUcY_YGHO93UDByAAb3HZ-mah6M",
       "groups": {
         "*": {
           "requireMention": false,
@@ -86,6 +86,21 @@
     "entries": {
       "telegram": {
         "enabled": true
+      }
+    }
+  },
+  "models": {
+    "providers": {
+      "9router": {
+        "baseUrl": "http://127.0.0.1:20128/v1",
+        "apiKey": "sk_9router",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "cx/gpt-5.2-codex",
+            "name": "GPT-5.2 Codex"
+          }
+        ]
       }
     }
   }

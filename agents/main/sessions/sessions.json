@@ -1,7 +1,7 @@
 {
   "agent:main:main": {
-    "sessionId": "4c3c11b5-d914-428a-9a04-3bd138ea8d7c",
-    "updatedAt": 1774834348026,
+    "sessionId": "6cb9609a-4743-4f54-878f-0cd9ba5b2119",
+    "updatedAt": 1775035276923,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
@@ -15,7 +15,7 @@
       "from": "heartbeat",
       "to": "heartbeat"
     },
-    "sessionFile": "C:\\Users\\admin\\.openclaw\\agents\\main\\sessions\\4c3c11b5-d914-428a-9a04-3bd138ea8d7c.jsonl",
+    "sessionFile": "C:\\Users\\admin\\.openclaw\\agents\\main\\sessions\\6cb9609a-4743-4f54-878f-0cd9ba5b2119.jsonl",
     "compactionCount": 0,
     "skillsSnapshot": {
       "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>~/AppData\\Roaming\\npm\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>node-connect</name>\n    <description>Diagnose OpenClaw node connection and pairing failures for Android, iOS, and macOS companion apps. Use when QR/setup code/manual connect fails, local Wi-Fi works but VPS/tailnet does not, or errors mention pairing required, unauthorized, bootstrap token invalid or expired, gateway.bind, gateway.remote.url, Tailscale, or plugins.entries.device-pair.config.publicUrl.</description>\n    <location>~/AppData\\Roaming\\npm\\node_modules\\openclaw\\skills\\node-connect\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create, edit, improve, or audit AgentSkills. Use when creating a new skill from scratch or when asked to improve, review, audit, tidy up, or clean up an existing skill or SKILL.md file. Also use when editing or restructuring a skill directory (moving files to references/ or scripts/, removing stale content, validating against the AgentSkills spec). Triggers on phrases like &quot;create a skill&quot;, &quot;author a skill&quot;, &quot;tidy up a skill&quot;, &quot;improve this skill&quot;, &quot;review the skill&quot;, &quot;clean up the skill&quot;, &quot;audit the skill&quot;.</description>\n    <location>~/AppData\\Roaming\\npm\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather and forecasts via wttr.in or Open-Meteo. Use when: user asks about weather, temperature, or forecasts for any location. NOT for: historical weather data, severe weather alerts, or detailed meteorological analysis. No API key needed.</description>\n    <location>~/AppData\\Roaming\\npm\\node_modules\\openclaw\\skills\\weather\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>app-memory-anhphiai</name>\n    <description>Remember and restate the confirmed basic usage flow for the AnhPhiAI app. Use when answering questions about how to use AnhPhiAI, when guiding a user through the basic workflow, or when drafting customer replies about the app&apos;s core steps.</description>\n    <location>~/.openclaw\\workspace\\skills\\app-memory-anhphiai\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>conversation-logger</name>\n    <description>Tự động ghi lại các cuộc trò chuyện hỗ trợ khách hàng. Kích hoạt SAU MỖI cuộc hội thoại hỗ trợ với user thường (không phải admin). Lưu Q&amp;A vào file memory để phục vụ tra cứu và cải thiện chất lượng trả lời trong tương lai.\n</description>\n    <location>~/.openclaw\\workspace\\skills\\conversation-logger\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>interlink-support</name>\n    <description>Interlink Network customer support knowledge base (bilingual EN/VI). Use when answering questions about Interlink app — mining, signup, login, ITLG tokens, games, wallet, HCS, referrals, bugs, or any user issue. Covers FAQ, bug codes (M01-M03, S01-S04, G01-G04, O01-O03), and advanced cases (Burn, Email, HCS, Wallet). Detect user language and reply in the same language.\n</description>\n    <location>~/.openclaw\\workspace\\skills\\interlink-support\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>whitepaper-sync</name>\n    <description>Daily sync và lưu trữ nội dung từ InterLink Whitepaper (https://whitepaper.interlinklabs.ai). Chạy tự động lúc 3:00 AM hàng ngày qua cron. Dùng để trả lời câu hỏi về token, tokenomics, technical, vision, roadmap từ whitepaper chính thức.\n</description>\n    <location>~/.openclaw\\workspace\\skills\\whitepaper-sync\\SKILL.md</location>\n  </skill>\n</available_skills>",
@@ -114,19 +114,16 @@
       ],
       "version": 0
     },
-    "authProfileOverride": "openai-codex:default",
-    "authProfileOverrideSource": "auto",
-    "authProfileOverrideCompactionCount": 0,
-    "modelProvider": "openai-codex",
-    "model": "gpt-5.4",
-    "contextTokens": 272000,
+    "modelProvider": "9router",
+    "model": "cx/gpt-5.2-codex",
+    "contextTokens": 200000,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1774834334227,
-      "sessionId": "4c3c11b5-d914-428a-9a04-3bd138ea8d7c",
+      "generatedAt": 1775035256707,
+      "sessionId": "6cb9609a-4743-4f54-878f-0cd9ba5b2119",
       "sessionKey": "agent:main:main",
-      "provider": "openai-codex",
-      "model": "gpt-5.4",
+      "provider": "9router",
+      "model": "cx/gpt-5.2-codex",
       "workspaceDir": "C:\\Users\\admin\\.openclaw\\workspace",
       "bootstrapMaxChars": 20000,
       "bootstrapTotalMaxChars": 150000,
@@ -142,25 +139,25 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 41195,
-        "projectContextChars": 27221,
-        "nonProjectContextChars": 13974
+        "chars": 42254,
+        "projectContextChars": 28272,
+        "nonProjectContextChars": 13982
       },
       "injectedWorkspaceFiles": [
         {
           "name": "AGENTS.md",
           "path": "C:\\Users\\admin\\.openclaw\\workspace\\AGENTS.md",
           "missing": false,
-          "rawChars": 17894,
-          "injectedChars": 17894,
+          "rawChars": 18631,
+          "injectedChars": 18631,
           "truncated": false
         },
         {
           "name": "SOUL.md",
           "path": "C:\\Users\\admin\\.openclaw\\workspace\\SOUL.md",
           "missing": false,
-          "rawChars": 1995,
-          "injectedChars": 1995,
+          "rawChars": 2309,
+          "injectedChars": 2309,
           "truncated": false
         },
         {
@@ -352,16 +349,16 @@
         ]
       }
     },
-    "inputTokens": 18344,
-    "outputTokens": 234,
-    "cacheRead": 15872,
+    "totalTokensFresh": true,
+    "inputTokens": 75968,
+    "outputTokens": 380,
+    "cacheRead": 0,
     "cacheWrite": 0,
-    "totalTokens": 18163,
-    "totalTokensFresh": true
+    "totalTokens": 26676
   },
   "agent:main:telegram:direct:7835139312": {
-    "sessionId": "fa9597bd-f4b7-4092-b86c-10c868618b2e",
-    "updatedAt": 1774806575815,
+    "sessionId": "12189503-4d16-44f5-b567-0ce034df6de9",
+    "updatedAt": 1775036746928,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
@@ -380,10 +377,10 @@
       "to": "telegram:7835139312",
       "accountId": "default"
     },
-    "sessionFile": "C:\\Users\\admin\\.openclaw\\agents\\main\\sessions\\fa9597bd-f4b7-4092-b86c-10c868618b2e.jsonl",
+    "sessionFile": "C:\\Users\\admin\\.openclaw\\agents\\main\\sessions\\12189503-4d16-44f5-b567-0ce034df6de9.jsonl",
     "compactionCount": 0,
     "skillsSnapshot": {
-      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>~/AppData\\Roaming\\npm\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>node-connect</name>\n    <description>Diagnose OpenClaw node connection and pairing failures for Android, iOS, and macOS companion apps. Use when QR/setup code/manual connect fails, local Wi-Fi works but VPS/tailnet does not, or errors mention pairing required, unauthorized, bootstrap token invalid or expired, gateway.bind, gateway.remote.url, Tailscale, or plugins.entries.device-pair.config.publicUrl.</description>\n    <location>~/AppData\\Roaming\\npm\\node_modules\\openclaw\\skills\\node-connect\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create, edit, improve, or audit AgentSkills. Use when creating a new skill from scratch or when asked to improve, review, audit, tidy up, or clean up an existing skill or SKILL.md file. Also use when editing or restructuring a skill directory (moving files to references/ or scripts/, removing stale content, validating against the AgentSkills spec). Triggers on phrases like &quot;create a skill&quot;, &quot;author a skill&quot;, &quot;tidy up a skill&quot;, &quot;improve this skill&quot;, &quot;review the skill&quot;, &quot;clean up the skill&quot;, &quot;audit the skill&quot;.</description>\n    <location>~/AppData\\Roaming\\npm\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather and forecasts via wttr.in or Open-Meteo. Use when: user asks about weather, temperature, or forecasts for any location. NOT for: historical weather data, severe weather alerts, or detailed meteorological analysis. No API key needed.</description>\n    <location>~/AppData\\Roaming\\npm\\node_modules\\openclaw\\skills\\weather\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>app-memory-anhphiai</name>\n    <description>Remember and restate the confirmed basic usage flow for the AnhPhiAI app. Use when answering questions about how to use AnhPhiAI, when guiding a user through the basic workflow, or when drafting customer replies about the app&apos;s core steps.</description>\n    <location>~/.openclaw\\workspace\\skills\\app-memory-anhphiai\\SKILL.md</location>\n  </skill>\n</available_skills>",
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>~/AppData\\Roaming\\npm\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>node-connect</name>\n    <description>Diagnose OpenClaw node connection and pairing failures for Android, iOS, and macOS companion apps. Use when QR/setup code/manual connect fails, local Wi-Fi works but VPS/tailnet does not, or errors mention pairing required, unauthorized, bootstrap token invalid or expired, gateway.bind, gateway.remote.url, Tailscale, or plugins.entries.device-pair.config.publicUrl.</description>\n    <location>~/AppData\\Roaming\\npm\\node_modules\\openclaw\\skills\\node-connect\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create, edit, improve, or audit AgentSkills. Use when creating a new skill from scratch or when asked to improve, review, audit, tidy up, or clean up an existing skill or SKILL.md file. Also use when editing or restructuring a skill directory (moving files to references/ or scripts/, removing stale content, validating against the AgentSkills spec). Triggers on phrases like &quot;create a skill&quot;, &quot;author a skill&quot;, &quot;tidy up a skill&quot;, &quot;improve this skill&quot;, &quot;review the skill&quot;, &quot;clean up the skill&quot;, &quot;audit the skill&quot;.</description>\n    <location>~/AppData\\Roaming\\npm\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather and forecasts via wttr.in or Open-Meteo. Use when: user asks about weather, temperature, or forecasts for any location. NOT for: historical weather data, severe weather alerts, or detailed meteorological analysis. No API key needed.</description>\n    <location>~/AppData\\Roaming\\npm\\node_modules\\openclaw\\skills\\weather\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>app-memory-anhphiai</name>\n    <description>Remember and restate the confirmed basic usage flow for the AnhPhiAI app. Use when answering questions about how to use AnhPhiAI, when guiding a user through the basic workflow, or when drafting customer replies about the app&apos;s core steps.</description>\n    <location>~/.openclaw\\workspace\\skills\\app-memory-anhphiai\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>conversation-logger</name>\n    <description>Tự động ghi lại các cuộc trò chuyện hỗ trợ khách hàng. Kích hoạt SAU MỖI cuộc hội thoại hỗ trợ với user thường (không phải admin). Lưu Q&amp;A vào file memory để phục vụ tra cứu và cải thiện chất lượng trả lời trong tương lai.\n</description>\n    <location>~/.openclaw\\workspace\\skills\\conversation-logger\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>interlink-support</name>\n    <description>Interlink Network customer support knowledge base (bilingual EN/VI). Use when answering questions about Interlink app — mining, signup, login, ITLG tokens, games, wallet, HCS, referrals, bugs, or any user issue. Covers FAQ, bug codes (M01-M03, S01-S04, G01-G04, O01-O03), and advanced cases (Burn, Email, HCS, Wallet). Detect user language and reply in the same language.\n</description>\n    <location>~/.openclaw\\workspace\\skills\\interlink-support\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>whitepaper-sync</name>\n    <description>Daily sync và lưu trữ nội dung từ InterLink Whitepaper (https://whitepaper.interlinklabs.ai). Chạy tự động lúc 3:00 AM hàng ngày qua cron. Dùng để trả lời câu hỏi về token, tokenomics, technical, vision, roadmap từ whitepaper chính thức.\n</description>\n    <location>~/.openclaw\\workspace\\skills\\whitepaper-sync\\SKILL.md</location>\n  </skill>\n</available_skills>",
       "skills": [
         {
           "name": "healthcheck"
@@ -400,6 +397,15 @@
         },
         {
           "name": "app-memory-anhphiai"
+        },
+        {
+          "name": "conversation-logger"
+        },
+        {
+          "name": "interlink-support"
+        },
+        {
+          "name": "whitepaper-sync"
         }
       ],
       "resolvedSkills": [
@@ -442,23 +448,44 @@
           "baseDir": "C:\\Users\\admin\\.openclaw\\workspace\\skills\\app-memory-anhphiai",
           "source": "openclaw-workspace",
           "disableModelInvocation": false
+        },
+        {
+          "name": "conversation-logger",
+          "description": "Tự động ghi lại các cuộc trò chuyện hỗ trợ khách hàng. Kích hoạt SAU MỖI cuộc hội thoại hỗ trợ với user thường (không phải admin). Lưu Q&A vào file memory để phục vụ tra cứu và cải thiện chất lượng trả lời trong tương lai.\n",
+          "filePath": "C:\\Users\\admin\\.openclaw\\workspace\\skills\\conversation-logger\\SKILL.md",
+          "baseDir": "C:\\Users\\admin\\.openclaw\\workspace\\skills\\conversation-logger",
+          "source": "openclaw-workspace",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "interlink-support",
+          "description": "Interlink Network customer support knowledge base (bilingual EN/VI). Use when answering questions about Interlink app — mining, signup, login, ITLG tokens, games, wallet, HCS, referrals, bugs, or any user issue. Covers FAQ, bug codes (M01-M03, S01-S04, G01-G04, O01-O03), and advanced cases (Burn, Email, HCS, Wallet). Detect user language and reply in the same language.\n",
+          "filePath": "C:\\Users\\admin\\.openclaw\\workspace\\skills\\interlink-support\\SKILL.md",
+          "baseDir": "C:\\Users\\admin\\.openclaw\\workspace\\skills\\interlink-support",
+          "source": "openclaw-workspace",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "whitepaper-sync",
+          "description": "Daily sync và lưu trữ nội dung từ InterLink Whitepaper (https://whitepaper.interlinklabs.ai). Chạy tự động lúc 3:00 AM hàng ngày qua cron. Dùng để trả lời câu hỏi về token, tokenomics, technical, vision, roadmap từ whitepaper chính thức.\n",
+          "filePath": "C:\\Users\\admin\\.openclaw\\workspace\\skills\\whitepaper-sync\\SKILL.md",
+          "baseDir": "C:\\Users\\admin\\.openclaw\\workspace\\skills\\whitepaper-sync",
+          "source": "openclaw-workspace",
+          "disableModelInvocation": false
         }
       ],
       "version": 0
     },
-    "authProfileOverride": "openai-codex:default",
-    "authProfileOverrideSource": "auto",
-    "authProfileOverrideCompactionCount": 0,
-    "modelProvider": "openai-codex",
-    "model": "gpt-5.4",
-    "contextTokens": 272000,
+    "modelProvider": "9router",
+    "model": "cx/gpt-5.2-codex",
+    "contextTokens": 200000,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1774806572564,
-      "sessionId": "fa9597bd-f4b7-4092-b86c-10c868618b2e",
+      "generatedAt": 1775036742515,
+      "sessionId": "12189503-4d16-44f5-b567-0ce034df6de9",
       "sessionKey": "agent:main:telegram:direct:7835139312",
-      "provider": "openai-codex",
-      "model": "gpt-5.4",
+      "provider": "9router",
+      "model": "cx/gpt-5.2-codex",
       "workspaceDir": "C:\\Users\\admin\\.openclaw\\workspace",
       "bootstrapMaxChars": 20000,
       "bootstrapTotalMaxChars": 150000,
@@ -474,25 +501,25 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 40264,
-        "projectContextChars": 27221,
-        "nonProjectContextChars": 13043
+        "chars": 42667,
+        "projectContextChars": 28272,
+        "nonProjectContextChars": 14395
       },
       "injectedWorkspaceFiles": [
         {
           "name": "AGENTS.md",
           "path": "C:\\Users\\admin\\.openclaw\\workspace\\AGENTS.md",
           "missing": false,
-          "rawChars": 17894,
-          "injectedChars": 17894,
+          "rawChars": 18631,
+          "injectedChars": 18631,
           "truncated": false
         },
         {
           "name": "SOUL.md",
           "path": "C:\\Users\\admin\\.openclaw\\workspace\\SOUL.md",
           "missing": false,
-          "rawChars": 1995,
-          "injectedChars": 1995,
+          "rawChars": 2309,
+          "injectedChars": 2309,
           "truncated": false
         },
         {
@@ -545,7 +572,7 @@
         }
       ],
       "skills": {
-        "promptChars": 3018,
+        "promptChars": 4362,
         "entries": [
           {
             "name": "healthcheck",
@@ -566,6 +593,18 @@
           {
             "name": "app-memory-anhphiai",
             "blockChars": 414
+          },
+          {
+            "name": "conversation-logger",
+            "blockChars": 397
+          },
+          {
+            "name": "interlink-support",
+            "blockChars": 538
+          },
+          {
+            "name": "whitepaper-sync",
+            "blockChars": 400
           }
         ]
       },
@@ -672,14 +711,14 @@
         ]
       }
     },
-    "inputTokens": 31688,
-    "outputTokens": 32,
-    "cacheRead": 0,
-    "cacheWrite": 0,
-    "totalTokens": 31688,
     "totalTokensFresh": true,
     "lastTo": "telegram:7835139312",
-    "lastAccountId": "default"
+    "lastAccountId": "default",
+    "inputTokens": 17526,
+    "outputTokens": 126,
+    "cacheRead": 0,
+    "cacheWrite": 0,
+    "totalTokens": 17526
   },
   "agent:main:telegram:group:-1003778434963": {
     "sessionId": "48a43064-3ba4-45ea-975e-b6a9abbaf30e",
@@ -1961,7 +2000,7 @@
       "accountId": "default"
     },
     "sessionId": "5d1d5888-6bc6-414b-a94b-176e41ecdc9d",
-    "updatedAt": 1774675384055,
+    "updatedAt": 1775038574484,
     "deliveryContext": {
       "channel": "telegram",
       "to": "telegram:7050187889",
@@ -2038,19 +2077,16 @@
       ],
       "version": 0
     },
-    "authProfileOverride": "openai-codex:default",
-    "authProfileOverrideSource": "auto",
-    "authProfileOverrideCompactionCount": 0,
-    "modelProvider": "openai-codex",
-    "model": "gpt-5.4",
-    "contextTokens": 272000,
+    "modelProvider": "9router",
+    "model": "cx/gpt-5.2-codex",
+    "contextTokens": 200000,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1774675381295,
+      "generatedAt": 1775038554101,
       "sessionId": "5d1d5888-6bc6-414b-a94b-176e41ecdc9d",
       "sessionKey": "agent:main:telegram:direct:7050187889",
-      "provider": "openai-codex",
-      "model": "gpt-5.4",
+      "provider": "9router",
+      "model": "cx/gpt-5.2-codex",
       "workspaceDir": "C:\\Users\\admin\\.openclaw\\workspace",
       "bootstrapMaxChars": 20000,
       "bootstrapTotalMaxChars": 150000,
@@ -2058,7 +2094,7 @@
         "warningMode": "once",
         "warningShown": false,
         "truncatedFiles": 0,
-        "nearLimitFiles": 0,
+        "nearLimitFiles": 1,
         "totalNearLimit": false
       },
       "sandbox": {
@@ -2066,25 +2102,25 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 38922,
-        "projectContextChars": 25879,
-        "nonProjectContextChars": 13043
+        "chars": 42138,
+        "projectContextChars": 29087,
+        "nonProjectContextChars": 13051
       },
       "injectedWorkspaceFiles": [
         {
           "name": "AGENTS.md",
           "path": "C:\\Users\\admin\\.openclaw\\workspace\\AGENTS.md",
           "missing": false,
-          "rawChars": 16552,
-          "injectedChars": 16552,
+          "rawChars": 19446,
+          "injectedChars": 19446,
           "truncated": false
         },
         {
           "name": "SOUL.md",
           "path": "C:\\Users\\admin\\.openclaw\\workspace\\SOUL.md",
           "missing": false,
-          "rawChars": 1995,
-          "injectedChars": 1995,
+          "rawChars": 2309,
+          "injectedChars": 2309,
           "truncated": false
         },
         {
@@ -2264,11 +2300,11 @@
         ]
       }
     },
-    "inputTokens": 353,
-    "outputTokens": 78,
-    "cacheRead": 43520,
+    "inputTokens": 190277,
+    "outputTokens": 687,
+    "cacheRead": 0,
     "cacheWrite": 0,
-    "totalTokens": 43873,
+    "totalTokens": 95284,
     "totalTokensFresh": true
   },
   "agent:main:telegram:direct:7069524082": {
@@ -2282,7 +2318,7 @@
       "accountId": "default"
     },
     "sessionId": "d2541991-ff41-43c2-a602-94fd91bd6762",
-    "updatedAt": 1774664606327,
+    "updatedAt": 1775038755946,
     "deliveryContext": {
       "channel": "telegram",
       "to": "telegram:7069524082",
@@ -2359,19 +2395,16 @@
       ],
       "version": 0
     },
-    "authProfileOverride": "openai-codex:default",
-    "authProfileOverrideSource": "auto",
-    "authProfileOverrideCompactionCount": 0,
-    "modelProvider": "openai-codex",
-    "model": "gpt-5.4",
-    "contextTokens": 272000,
+    "modelProvider": "9router",
+    "model": "cx/gpt-5.2-codex",
+    "contextTokens": 200000,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1774664596603,
+      "generatedAt": 1775038722935,
       "sessionId": "d2541991-ff41-43c2-a602-94fd91bd6762",
       "sessionKey": "agent:main:telegram:direct:7069524082",
-      "provider": "openai-codex",
-      "model": "gpt-5.4",
+      "provider": "9router",
+      "model": "cx/gpt-5.2-codex",
       "workspaceDir": "C:\\Users\\admin\\.openclaw\\workspace",
       "bootstrapMaxChars": 20000,
       "bootstrapTotalMaxChars": 150000,
@@ -2379,7 +2412,7 @@
         "warningMode": "once",
         "warningShown": false,
         "truncatedFiles": 0,
-        "nearLimitFiles": 0,
+        "nearLimitFiles": 1,
         "totalNearLimit": false
       },
       "sandbox": {
@@ -2387,25 +2420,25 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 32628,
-        "projectContextChars": 19585,
-        "nonProjectContextChars": 13043
+        "chars": 42138,
+        "projectContextChars": 29087,
+        "nonProjectContextChars": 13051
       },
       "injectedWorkspaceFiles": [
         {
           "name": "AGENTS.md",
           "path": "C:\\Users\\admin\\.openclaw\\workspace\\AGENTS.md",
           "missing": false,
-          "rawChars": 11206,
-          "injectedChars": 11206,
+          "rawChars": 19446,
+          "injectedChars": 19446,
           "truncated": false
         },
         {
           "name": "SOUL.md",
           "path": "C:\\Users\\admin\\.openclaw\\workspace\\SOUL.md",
           "missing": false,
-          "rawChars": 1995,
-          "injectedChars": 1995,
+          "rawChars": 2309,
+          "injectedChars": 2309,
           "truncated": false
         },
         {
@@ -2436,8 +2469,8 @@
           "name": "HEARTBEAT.md",
           "path": "C:\\Users\\admin\\.openclaw\\workspace\\HEARTBEAT.md",
           "missing": false,
-          "rawChars": 447,
-          "injectedChars": 447,
+          "rawChars": 728,
+          "injectedChars": 728,
           "truncated": false
         },
         {
@@ -2452,8 +2485,8 @@
           "name": "MEMORY.md",
           "path": "C:\\Users\\admin\\.openclaw\\workspace\\MEMORY.md",
           "missing": false,
-          "rawChars": 1913,
-          "injectedChars": 1913,
+          "rawChars": 2580,
+          "injectedChars": 2580,
           "truncated": false
         }
       ],
@@ -2585,12 +2618,12 @@
         ]
       }
     },
-    "inputTokens": 44035,
-    "outputTokens": 150,
-    "cacheRead": 38656,
+    "inputTokens": 195163,
+    "outputTokens": 1181,
+    "cacheRead": 0,
     "cacheWrite": 0,
-    "totalTokens": 43952,
-    "totalTokensFresh": true
+    "totalTokensFresh": true,
+    "totalTokens": 97273
   },
   "agent:main:telegram:direct:7240821398": {
     "origin": {
@@ -2603,7 +2636,7 @@
       "accountId": "default"
     },
     "sessionId": "0ee2aa03-4832-458d-9288-f1ce688da156",
-    "updatedAt": 1774702086677,
+    "updatedAt": 1774862745202,
     "deliveryContext": {
       "channel": "telegram",
       "to": "telegram:7240821398",
@@ -2699,7 +2732,7 @@
     "contextTokens": 272000,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1774702081701,
+      "generatedAt": 1774862735874,
       "sessionId": "0ee2aa03-4832-458d-9288-f1ce688da156",
       "sessionKey": "agent:main:telegram:direct:7240821398",
       "provider": "openai-codex",
@@ -2719,8 +2752,8 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 40805,
-        "projectContextChars": 27221,
+        "chars": 41856,
+        "projectContextChars": 28272,
         "nonProjectContextChars": 13584
       },
       "injectedWorkspaceFiles": [
@@ -2728,16 +2761,16 @@
           "name": "AGENTS.md",
           "path": "C:\\Users\\admin\\.openclaw\\workspace\\AGENTS.md",
           "missing": false,
-          "rawChars": 17894,
-          "injectedChars": 17894,
+          "rawChars": 18631,
+          "injectedChars": 18631,
           "truncated": false
         },
         {
           "name": "SOUL.md",
           "path": "C:\\Users\\admin\\.openclaw\\workspace\\SOUL.md",
           "missing": false,
-          "rawChars": 1995,
-          "injectedChars": 1995,
+          "rawChars": 2309,
+          "injectedChars": 2309,
           "truncated": false
         },
         {
@@ -2921,11 +2954,11 @@
         ]
       }
     },
-    "inputTokens": 280,
-    "outputTokens": 108,
-    "cacheRead": 117376,
+    "inputTokens": 136144,
+    "outputTokens": 148,
+    "cacheRead": 0,
     "cacheWrite": 0,
-    "totalTokens": 117656,
+    "totalTokens": 136144,
     "totalTokensFresh": true
   },
   "agent:main:telegram:direct:7356966890": {
@@ -4022,7 +4055,7 @@
       "accountId": "default"
     },
     "sessionId": "6d32c170-a249-45fd-aa7e-b2634c02316c",
-    "updatedAt": 1774675492589,
+    "updatedAt": 1774865741198,
     "deliveryContext": {
       "channel": "telegram",
       "to": "telegram:6410874108",
@@ -4140,7 +4173,7 @@
     "contextTokens": 272000,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1774675488869,
+      "generatedAt": 1774865725852,
       "sessionId": "6d32c170-a249-45fd-aa7e-b2634c02316c",
       "sessionKey": "agent:main:telegram:direct:6410874108",
       "provider": "openai-codex",
@@ -4152,7 +4185,7 @@
         "warningMode": "once",
         "warningShown": false,
         "truncatedFiles": 0,
-        "nearLimitFiles": 0,
+        "nearLimitFiles": 1,
         "totalNearLimit": false
       },
       "sandbox": {
@@ -4160,8 +4193,8 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 40266,
-        "projectContextChars": 25879,
+        "chars": 42659,
+        "projectContextChars": 28272,
         "nonProjectContextChars": 14387
       },
       "injectedWorkspaceFiles": [
@@ -4169,16 +4202,16 @@
           "name": "AGENTS.md",
           "path": "C:\\Users\\admin\\.openclaw\\workspace\\AGENTS.md",
           "missing": false,
-          "rawChars": 16552,
-          "injectedChars": 16552,
+          "rawChars": 18631,
+          "injectedChars": 18631,
           "truncated": false
         },
         {
           "name": "SOUL.md",
           "path": "C:\\Users\\admin\\.openclaw\\workspace\\SOUL.md",
           "missing": false,
-          "rawChars": 1995,
-          "injectedChars": 1995,
+          "rawChars": 2309,
+          "injectedChars": 2309,
           "truncated": false
         },
         {
@@ -4370,11 +4403,11 @@
         ]
       }
     },
-    "inputTokens": 329,
-    "outputTokens": 124,
-    "cacheRead": 26880,
+    "inputTokens": 26267,
+    "outputTokens": 238,
+    "cacheRead": 28160,
     "cacheWrite": 0,
-    "totalTokens": 27209,
+    "totalTokens": 28805,
     "totalTokensFresh": true
   }
 }
