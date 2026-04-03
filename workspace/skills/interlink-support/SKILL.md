@@ -534,6 +534,135 @@ Use this skill to handle all Interlink customer support queries. When a user ask
 
 **Note**: HHP display may temporarily show incorrectly but the system records the correct value. If HHP shows 0 or not updating, please wait — the dev team is fixing display issues.
 
+---
+
+### KYC & Curator Verification / Xác minh KYC & Curator
+
+> Luồng xác minh danh tính (KYC) của Interlink gồm 3 giai đoạn: Matching → Nộp hồ sơ → Duyệt.
+
+#### Các đối tượng tham gia
+- **User (Người dùng)**: Người có nhu cầu xác minh danh tính (KYC)
+- **System (Hệ thống)**: Xử lý logic tự động (matching, checking, timer)
+- **Curator (Người kiểm duyệt)**: Đối tác hoặc người được ủy quyền kiểm tra hồ sơ cuối cùng
+
+#### Trạng thái hồ sơ (Status)
+| Trạng thái | Ý nghĩa |
+|---|---|
+| **In Review** | Đang chờ duyệt — ngay sau khi User nộp hồ sơ |
+| **Passed** | Đã duyệt — Internal chấp thuận |
+| **Failed** | Từ chối — Internal từ chối (kèm lý do) |
+
+---
+
+**Q: How to start KYC? / Cách bắt đầu KYC?**
+> 🇬🇧 Tap "Match Curator" in the app. A list of anonymous Curators (with region tags like Indian, Vietnamese...) will appear. Each shows how many users are currently matching. Pick one to start.
+>
+> 🇻🇳 Nhấn "Match Curator" trong app. Danh sách Curator nặc danh (kèm tag vùng: Indian, Vietnamese...) sẽ hiện lên. Mỗi Curator hiển thị số người đang matching. Chọn 1 Curator để bắt đầu.
+
+**Q: Can I change Curator after matching? / Có thể đổi Curator sau khi matching không?**
+> 🇬🇧 Yes. While waiting, you can cancel and choose a different Curator. Once the Curator picks your application, you move to the submission phase.
+>
+> 🇻🇳 Có. Trong lúc chờ, bạn có thể hủy và chọn Curator khác. Khi Curator chọn đơn của bạn, bạn sẽ chuyển sang giai đoạn nộp hồ sơ.
+
+**Q: How long do I have to submit documents? / Có bao lâu để nộp hồ sơ?**
+> 🇬🇧 You have **24 hours** from the moment a Curator picks your application. If you don't submit within 24h, your process will be cancelled and you must match again from the beginning.
+>
+> 🇻🇳 Bạn có **24 giờ** kể từ khi Curator chọn đơn. Nếu không nộp trong 24h, quá trình sẽ bị hủy và bạn phải chọn Curator lại từ đầu.
+
+**Q: What documents are needed for KYC? / Cần giấy tờ gì cho KYC?**
+> 🇬🇧
+> - **Level 1**: Select your country → Upload front and back of your ID document (Identity Card, Driver License, Passport, or Birth Certificate)
+> - **Level 2**: Upload a portrait photo — right hand holding a note with "Interlink + today's date", left hand holding the front of your ID document
+> - **Level 3**: Upload a portrait photo holding the Interlink app on Home screen showing your current ITLG balance
+>
+> 🇻🇳
+> - **Level 1**: Chọn quốc gia → Tải lên mặt trước và mặt sau giấy tờ (CMND/CCCD, bằng lái, hộ chiếu, hoặc giấy khai sinh)
+> - **Level 2**: Tải lên ảnh chân dung — tay phải cầm note ghi "Interlink + ngày hiện tại", tay trái cầm mặt trước giấy tờ tùy thân
+> - **Level 3**: Tải lên ảnh chân dung tay cầm app Interlink ở màn Home hiển thị số ITLG hiện có
+
+**Q: What happens after I submit? / Sau khi nộp thì sao?**
+> 🇬🇧 Your application moves to "In Review" status. The system sends your documents (with sensitive info redacted) to your matched Curator for review.
+> - If **Passed**: You'll be notified that your KYC is approved.
+> - If **Failed**: You'll be notified with the rejection reason.
+>
+> 🇻🇳 Đơn chuyển sang trạng thái "In Review". Hệ thống gửi hồ sơ (đã che thông tin nhạy cảm) cho Curator đã match để duyệt.
+> - Nếu **Passed**: Bạn sẽ được thông báo KYC đã duyệt.
+> - Nếu **Failed**: Bạn sẽ được thông báo kèm lý do từ chối.
+
+**Q: KYC failed — what to do? / KYC bị từ chối — phải làm gì?**
+> 🇬🇧 Check the rejection reason. Fix the issue (e.g., unclear photo, wrong document) and match a Curator again to restart the process.
+>
+> 🇻🇳 Kiểm tra lý do từ chối. Sửa lỗi (ví dụ: ảnh không rõ, sai giấy tờ) và chọn Curator mới để bắt đầu lại quy trình.
+
+**Q: KYC timeout — 24h expired? / KYC hết hạn 24 giờ?**
+> 🇬🇧 If you didn't submit within 24 hours, your process was automatically cancelled. You need to go back to "Match Curator" and start over.
+>
+> 🇻🇳 Nếu bạn không nộp trong 24 giờ, quá trình đã tự động bị hủy. Bạn cần quay lại "Match Curator" và bắt đầu lại.
+
+**Q: Is my data safe with the Curator? / Dữ liệu của tôi có an toàn không?**
+> 🇬🇧 Yes. The system automatically redacts sensitive information before sending to the Curator. Curators only see what's necessary for verification.
+>
+> 🇻🇳 Có. Hệ thống tự động che các thông tin nhạy cảm trước khi gửi cho Curator. Curator chỉ thấy thông tin cần thiết cho việc xác minh.
+
+---
+
+### Common Support Replies / Câu trả lời thường dùng (⚠️ GỬI NGUYÊN VĂN)
+
+**Q: How to check seedphrase? / Cách check seedphrase?**
+> Please follow the tutorial video.
+> 📹 https://drive.google.com/file/d/1rGQzCfGiOdjpv2EzieenhBbJJsN_V-Nc/view?usp=drive_link
+
+**Q: How to connect social? / Cách connect social?**
+> Please follow the tutorial video.
+> 📹 https://drive.google.com/file/d/1nuv6_-dif_J6mApJw6HRIcTHXQlhX5U4/view?usp=drive_link
+
+**Q: How to register? / Hướng dẫn đăng ký?**
+> ⚠️ GỬI NGUYÊN VĂN:
+> 1. Download the App:
+>  For iPhone: Go to the App Store and search for "Interlink"
+>  For Android: Go to Google Play and search for "Interlink"
+> 2. Sign Up:
+>  Open the app and click "Sign Up".
+>  Enter your ID (A random number sequence created by you, not matching any other InterLink account).
+> The password consists of 6 digits, created by you, and please remember it
+> 3. Complete Profile & Face Verification:
+>  Log in, complete your profile, and finish face verification to unlock all features.
+> 4. Go to the 'Human Hash' section, submit the referral code, and once completed, your code will become active.
+> You can use the code: 1901200219
+> 📹 https://drive.google.com/file/d/1mtGeCHLehfvzMldE9_qgFF5nkdVduyHR/view?usp=drive_link
+
+**Q: Forgot Interlink ID? / Quên Interlink ID?**
+> Please tap on "Forgot ID" and follow the system's instructions.
+> 📹 https://drive.google.com/file/d/1ytm-A7-cTNyREGluEBB3h8gPoaQ1CS65/view?usp=drive_link
+
+**Q: Why did my ITLG decrease? / Tại sao ITLG bị giảm?**
+> ⚠️ GỬI NGUYÊN VĂN:
+> The token burn mechanism is now active, please stay tuned.
+> If your direct and indirect referrals remain inactive and their total ITLG becomes 0, the referral rewards you previously received from them will be deducted.
+> 📹 Burn explanation: https://drive.google.com/file/d/1CTwDOk3b1LT6AgPqTRoJ5w_rsCMfofSA/view?usp=drive_link
+> 📹 How to check burn: https://drive.google.com/file/d/1TKiyC21cPZpmkGkTVzW5sn3RbLSIIACT/view?usp=drive_link
+
+**Q: How to create wallet? / Cách tạo ví?**
+> Please perform the steps shown in the video on your own account.
+> 📹 https://drive.google.com/file/d/1mDRsk1EPbjKRsA51C9ztL4BjMjgRrJ8H/view?usp=drive_link
+
+**Q: How to create/join group? / Cách tạo group?**
+> ⚠️ GỬI NGUYÊN VĂN:
+> You must complete verification before creating or joining a group.
+> For a member to be eligible to claim group rewards: The group must have at least 3 members. At least 2 members in the group must be active (e.g., 2/3, 2/4, 2/5).
+> Among those active members, you yourself must also be active. "Active" means mining at least once per day within the total of 6 mining sessions, and it only counts after you have joined the group (for example, if you mined once before joining the group, it does not count). You can join the group to exchange with other users. https://t.me/interlinkIDchat
+> 📹 https://drive.google.com/file/d/1XuRxGWpMdc4IEL0goaJtjSmm8iqJQWmC/view?usp=drive_link
+
+**Q: How to enter referral code? / Cách nhập ref code?**
+> Go to the 'Human Hash' section, submit the referral code, and once completed, your code will become active.
+> You can use the code: 1901200219
+> 📹 https://drive.google.com/file/d/1QfDxCUnwXCrlVdoSVkHTXNUiy29N1-hA/view?usp=drive_link
+
+**Q: How to recover burned ITLG? / Cách khôi phục ITLG bị burn?**
+> ⚠️ GỬI NGUYÊN VĂN:
+> If your ITLG was burned due to inactivity, it will be restored once you complete the full mining streak.
+> If the burn was caused by your downline being inactive, they need to become active again and complete the mining streak to fully restore the burned ITLG. Once that happens, the ITLG burned from your downline will also be credited back to you.
+
 ## Important Links / Liên kết quan trọng
 
 - Whitepaper: https://whitepaper.interlinklabs.ai

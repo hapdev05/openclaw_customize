@@ -47,14 +47,27 @@ Bot should respond in a **professional, empathetic, and concise** style. Key pat
 - **APK download links**: https://interlinklabs.ai | https://linkvault.interlinklabs.ai
 - APK Pure: https://apkpure.com/interlink-network/org.ai.interlinklabs.interlinkId
 
-### 4. Face Verification / KYC (7+ cases)
-**Symptoms**: Emulator detected, face scan fail, face scan no result after 3 days, black screen
+### 4. Face Verification / KYC & Curator (7+ cases)
+**Symptoms**: Emulator detected, face scan fail, face scan no result after 3 days, black screen, KYC timeout, can't match curator, KYC failed
 **Solutions**:
 - Emulator detected: "You are using an emulator or virtual device. Please verify on a real physical device, then log back in on any device."
 - Camera permission: "Go to Settings → grant camera permission to the Interlink app"
 - Face scan fail (network): "Please move to a place with better internet, ensure good lighting, and try again"
 - Deepfake/cheat detection: Account may be banned — ask for ID to check
 - Face verified on 2 accounts: "Each face can only verify ONE account. The second account will be flagged."
+
+**KYC Curator Flow** (NEW):
+- **How to start**: Tap "Match Curator" → choose from anonymous Curator list → wait for Curator to pick your application
+- **Can change Curator**: Yes, cancel and pick another before Curator picks you
+- **24h deadline**: After Curator picks, user has 24 hours to submit documents. Timeout = start over
+- **KYC Level 1**: Select country → upload front & back of ID (Identity Card, Driver License, Passport, Birth Certificate)
+- **KYC Level 2**: Portrait photo — right hand holds note "Interlink + today's date", left hand holds front of ID
+- **KYC Level 3**: Portrait photo holding Interlink app on Home screen showing ITLG balance
+- **After submit**: Status = "In Review" → Curator reviews (with sensitive info redacted)
+- **Result**: Passed (approved) or Failed (with reason)
+- **KYC failed**: Check reason → fix issue → match Curator again
+- **Data security**: System auto-redacts sensitive info before sending to Curator
+
 **Action**: Always ask for video recording of the face scan process
 
 ### 5. Game Issues (8+ cases)
@@ -203,3 +216,72 @@ English please.
 ```
 Country groups are for information exchange only. You can only share codes in the **Human Code** group. If you spam, the moderators might block you from those groups.
 ```
+
+### Registration Guide (⚠️ GỬI NGUYÊN VĂN)
+```
+1. Download the App:
+ For iPhone: Go to the App Store and search for "Interlink"
+ For Android: Go to Google Play and search for "Interlink"
+2. Sign Up:
+ Open the app and click "Sign Up".
+ Enter your ID (A random number sequence created by you, not matching any other InterLink account).
+The password consists of 6 digits, created by you, and please remember it
+3. Complete Profile & Face Verification:
+ Log in, complete your profile, and finish face verification to unlock all features.
+4. Go to the 'Human Hash' section, submit the referral code, and once completed, your code will become active.
+You can use the code: 1901200219
+```
+📹 Tutorial: https://drive.google.com/file/d/1mtGeCHLehfvzMldE9_qgFF5nkdVduyHR/view?usp=drive_link
+
+### Forgot Interlink ID
+```
+Please tap on "Forgot ID" and follow the system's instructions.
+```
+📹 Tutorial: https://drive.google.com/file/d/1ytm-A7-cTNyREGluEBB3h8gPoaQ1CS65/view?usp=drive_link
+
+### ITLG Burn Explanation (⚠️ GỬI NGUYÊN VĂN)
+```
+The token burn mechanism is now active, please stay tuned.
+If your direct and indirect referrals remain inactive and their total ITLG becomes 0, the referral rewards you previously received from them will be deducted.
+```
+📹 Burn: https://drive.google.com/file/d/1CTwDOk3b1LT6AgPqTRoJ5w_rsCMfofSA/view?usp=drive_link
+📹 Check Burn: https://drive.google.com/file/d/1TKiyC21cPZpmkGkTVzW5sn3RbLSIIACT/view?usp=drive_link
+
+### Wallet Creation
+```
+Please perform the steps shown in the video on your own account.
+```
+📹 Tutorial: https://drive.google.com/file/d/1mDRsk1EPbjKRsA51C9ztL4BjMjgRrJ8H/view?usp=drive_link
+
+### Group Creation & Rules (⚠️ GỬI NGUYÊN VĂN)
+```
+You must complete verification before creating or joining a group.
+For a member to be eligible to claim group rewards: The group must have at least 3 members. At least 2 members in the group must be active (e.g., 2/3, 2/4, 2/5).
+Among those active members, you yourself must also be active. "Active" means mining at least once per day within the total of 6 mining sessions, and it only counts after you have joined the group (for example, if you mined once before joining the group, it does not count). You can join the group to exchange with other users. https://t.me/interlinkIDchat
+```
+📹 Tutorial: https://drive.google.com/file/d/1XuRxGWpMdc4IEL0goaJtjSmm8iqJQWmC/view?usp=drive_link
+
+### Referral Code Entry
+```
+Go to the 'Human Hash' section, submit the referral code, and once completed, your code will become active.
+You can use the code: 1901200219
+```
+📹 Tutorial: https://drive.google.com/file/d/1QfDxCUnwXCrlVdoSVkHTXNUiy29N1-hA/view?usp=drive_link
+
+### ITLG Recovery After Burn (⚠️ GỬI NGUYÊN VĂN)
+```
+If your ITLG was burned due to inactivity, it will be restored once you complete the full mining streak.
+If the burn was caused by your downline being inactive, they need to become active again and complete the mining streak to fully restore the burned ITLG. Once that happens, the ITLG burned from your downline will also be credited back to you.
+```
+
+### Seedphrase Check
+```
+Please follow the tutorial video.
+```
+📹 Tutorial: https://drive.google.com/file/d/1rGQzCfGiOdjpv2EzieenhBbJJsN_V-Nc/view?usp=drive_link
+
+### Social Connect
+```
+Please follow the tutorial video.
+```
+📹 Tutorial: https://drive.google.com/file/d/1nuv6_-dif_J6mApJw6HRIcTHXQlhX5U4/view?usp=drive_link
