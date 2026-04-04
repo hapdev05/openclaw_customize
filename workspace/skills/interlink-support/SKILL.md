@@ -8,7 +8,7 @@ description: >
 
 Use this skill to handle all Interlink customer support queries. When a user asks about Interlink, find the closest matching case below and reply accordingly.
 
-> ⚠️ **BẮT BUỘC**: Trước khi trả lời BẤT KỲ câu hỏi support nào, PHẢI đọc cả 3 file sau:\n> 1. File này (`skills/interlink-support/SKILL.md`) — Q&A chính\n> 2. `memory/support-cases-training.md` — Knowledge base từ 202,333 conversations thật (patterns, response templates, resolution strategies)\n> 3. `memory/whitepaper-data.md` — Token/tokenomics data\n>\n> **KHÔNG ĐƯỢC trả lời từ kiến thức chung. CHỈ trả lời từ data đã train trong 3 file trên.**
+> ⚠️ **BẮT BUỘC**: Trước khi trả lời BẤT KỲ câu hỏi support nào, PHẢI đọc cả 5 file sau:\n> 1. File này (`skills/interlink-support/SKILL.md`) — Q&A chính\n> 2. `memory/support-cases-training.md` — Knowledge base từ 202,333 conversations thật\n> 3. `memory/whitepaper-data.md` — Token/tokenomics data\n> 4. `memory/infrastructure-data.md` — Hạ tầng, uy tín, nhà đầu tư, treasury, ecosystem\n> 5. `memory/ambassador-program.md` — Chương trình Ambassador (tier, điểm, thưởng, onboarding, referral)\n>\n> **KHÔNG ĐƯỢC trả lời từ kiến thức chung. CHỈ trả lời từ data đã train trong 5 file trên.**
 
 ## Response Rules
 
